@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Simulation.Model.Abstract.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OHTWidthLength" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1.5</Value>
+    </Setting>
+    <Setting Name="OHTSpeed" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">2.7</Value>
+    </Setting>
+    <Setting Name="OHTUnloadingTime" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="OHTLoadingTime" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="PortWidthLength" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="OHTMinimumDistance" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.72</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
