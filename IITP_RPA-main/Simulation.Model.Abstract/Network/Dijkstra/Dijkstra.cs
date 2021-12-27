@@ -503,8 +503,6 @@ namespace Simulation.Model.Abstract
 
         //    //shortest path lines
 
-
-
         //    //for (int i = 0; i < _nodeCount; i++)
         //    //{
         //    //    int nodeIdx = i;
@@ -630,7 +628,6 @@ namespace Simulation.Model.Abstract
                     }
                 }
 
-
                 //for (int v = 0; v < _nodeCount; ++v)
                 //    if (!shortestPathTreeSet[v] && Convert.ToBoolean(-_graph[u, v]) && distance[u] != int.MaxValue && distance[u] + _graph[u, v] < distance[v])
                 //    {
@@ -638,7 +635,6 @@ namespace Simulation.Model.Abstract
                 //        _refNode[source, v] = u;
                 //    }
             }
-
 
 //            for (int i = 0; i < _nodeCount; i++)
 //            {
@@ -686,7 +682,6 @@ namespace Simulation.Model.Abstract
             //    }
 
             //}
-
 
             //watch3.Stop();
 
