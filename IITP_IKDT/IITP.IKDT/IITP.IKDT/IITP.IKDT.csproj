@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E06907D-35C4-46C5-B4A2-1F6DF7EB293E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IITP.IKDT</RootNamespace>
+    <AssemblyName>IITP.IKDT</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="devDept.Eyeshot.Control.Win.v12, Version=12.0.456.0, Culture=neutral, PublicKeyToken=5385d83d2fb4d7d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio._3D.Eyeshot\devDept.Eyeshot.Control.Win.v12.dll</HintPath>
+    </Reference>
+    <Reference Include="devDept.Geometry.v12, Version=12.0.456.0, Culture=neutral, PublicKeyToken=9440825e8b4733bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio._3D.Eyeshot\devDept.Geometry.v12.dll</HintPath>
+    </Reference>
+    <Reference Include="devDept.Graphics.Shaders.v12, Version=12.0.456.0, Culture=neutral, PublicKeyToken=54ce5f5f803e4b42, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio._3D.Eyeshot\devDept.Graphics.Shaders.v12.dll</HintPath>
+    </Reference>
+    <Reference Include="devDept.Graphics.Win.v12, Version=12.0.456.0, Culture=neutral, PublicKeyToken=f3cd437f0d8061b5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio._3D.Eyeshot\devDept.Graphics.Win.v12.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.Extensions, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.2.UI, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Pinokio.Core">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Core\Pinokio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Database">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Database\Pinokio.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Log4Net">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Log4Net\Pinokio.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Map">
+      <HintPath>..\..\..\Pinokio.Engine\Piniokio.Map\Pinokio.Map.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Simulation">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Simulation\Pinokio.Simulation.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Simulation.Disc">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Simulation.Disc\Pinokio.Simulation.Disc.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.UserControls">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.UserControls\Pinokio.UserControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio._3D">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio._3D\Pinokio._3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio._3D.Eyeshot">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio._3D.Eyeshot\Pinokio._3D.Eyeshot.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="01. Main\IKShapeFactory.cs" />
+    <Compile Include="01. Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01. Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02. Simulation\SimDocument.cs" />
+    <Compile Include="03. Communication\ZMPManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="01. Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Protobuf Include="03. Communication\iitp.proto" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AsyncIO">
+      <Version>0.1.69</Version>
+    </PackageReference>
+    <PackageReference Include="ClosedXML">
+      <Version>0.97.0</Version>
+    </PackageReference>
+    <PackageReference Include="DocumentFormat.OpenXml">
+      <Version>2.19.0</Version>
+    </PackageReference>
+    <PackageReference Include="ExcelNumberFormat">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Protobuf">
+      <Version>3.21.12</Version>
+    </PackageReference>
+    <PackageReference Include="Grpc.Tools">
+      <Version>2.51.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="log4net">
+      <Version>2.0.15</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.Platforms">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MySqlConnector">
+      <Version>2.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="NaCl.Net">
+      <Version>0.1.13</Version>
+    </PackageReference>
+    <PackageReference Include="NetMQ">
+      <Version>4.0.1.10</Version>
+    </PackageReference>
+    <PackageReference Include="NETStandard.Library">
+      <Version>2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="System.Buffers">
+      <Version>4.5.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.IO.Packaging">
+      <Version>7.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Sockets">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime">
+      <Version>4.3.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="04. DB\" />
+    <Folder Include="05. Documents\" />
+    <Folder Include="06. EventLog\" />
+    <Folder Include="07. 3dModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pinokio.Simulation.FACTORY\Pinokio.Simulation.FACTORY.csproj">
+      <Project>{1bfbe48d-da4e-42f9-8e38-d1cabc4c4a4c}</Project>
+      <Name>Pinokio.Simulation.FACTORY</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pinokio.Simulation.Models.IK\Pinokio.Simulation.Models.IK.csproj">
+      <Project>{b865e9d3-afde-4d45-9d8d-60b94f5b65aa}</Project>
+      <Name>Pinokio.Simulation.Models.IK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

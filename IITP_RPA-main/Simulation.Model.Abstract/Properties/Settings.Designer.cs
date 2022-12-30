@@ -12,7 +12,7 @@ namespace Simulation.Model.Abstract.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.3.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,7 +25,7 @@ namespace Simulation.Model.Abstract.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("784")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.5")]
         public double OHTWidthLength {
             get {
                 return ((double)(this["OHTWidthLength"]));
@@ -37,7 +37,7 @@ namespace Simulation.Model.Abstract.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1500")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2.7")]
         public double OHTSpeed {
             get {
                 return ((double)(this["OHTSpeed"]));
@@ -73,7 +73,7 @@ namespace Simulation.Model.Abstract.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("313.6")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
         public double PortWidthLength {
             get {
                 return ((double)(this["PortWidthLength"]));
@@ -85,7 +85,7 @@ namespace Simulation.Model.Abstract.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("125")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.72")]
         public double OHTMinimumDistance {
             get {
                 return ((double)(this["OHTMinimumDistance"]));

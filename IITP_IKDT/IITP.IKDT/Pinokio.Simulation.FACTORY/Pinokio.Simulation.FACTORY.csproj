@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.97.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pinokio.Simulation.Models.IK\Pinokio.Simulation.Models.IK.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Pinokio.Core">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Core\Pinokio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Database">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Database\Pinokio.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Map">
+      <HintPath>..\..\..\Pinokio.Engine\Piniokio.Map\Pinokio.Map.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Simulation">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Simulation\Pinokio.Simulation.dll</HintPath>
+    </Reference>
+    <Reference Include="Pinokio.Simulation.Disc">
+      <HintPath>..\..\..\Pinokio.Engine\Pinokio.Simulation.Disc\Pinokio.Simulation.Disc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

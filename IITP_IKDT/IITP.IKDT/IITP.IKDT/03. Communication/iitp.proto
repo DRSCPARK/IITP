@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+package tutorial ;
+
+
+
+message RequestSend{
+    string send_message = 1;  //  "SEND_LAYOUT_MESSAGE" or "SEND_MPT_MESSAGE"
+}
+
+
+
+message ReplySend{
+    string send_message = 1;  //  "Confirmed"
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+message Machine{
+    string name = 1;
+    double position_x = 2;
+    double position_y = 3;
+    double width = 4;
+    double depth = 5;
+    double transportation_time_to_resource = 6;
+    double transportation_time_from_resource = 7;
+}
+
+message RequestLayoutData{
+    Machine HANIL40T1 = 1;
+    Machine HANIL110T1 = 2;
+    Machine HANIL150T1 = 3;
+    Machine HANIL80T1 = 4;
+    Machine KYORI40T1 = 5;
+    Machine KYORI30T1 = 6;
+    Machine KYORI30T2 = 7;
+    Machine MITSUI60T1 = 8;
+
+}
+
+message ReplyLayoutData{
+    string reply_check =  1;  // "confirmed"
+}
+
+message RequestMptData{
+    int32 production_time = 1;
+    int32 worker_processing = 2;
+    int32 worker_packaging = 3;
+}
+
+message ReplyMptData{
+    string reply_check =  1; // "confirmed"
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+message RequestResult{
+    string result_request = 1; // "REQUEST_LAYOUT_RESULT" or "REQUEST_MPT_RESULT"
+}
+
+message ReplyLayoutResult{
+    double due_date = 1;
+    double total_processing_time = 2;
+}
+
+message ReplyMptResult{
+    double due_date = 1;
+    double processing_utilization_rate = 2;
+    double packaging_utilization_rate = 3;
+}
+
+
+
+
+
+
+
+
+
+
+
