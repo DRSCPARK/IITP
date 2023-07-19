@@ -58,6 +58,9 @@ namespace Pinokio.IKDT
                         case "MITSUI60T1":
                             type = EyeshotShapeType.Process;
                             break;
+                        default:
+                            type = EyeshotShapeType.Process;
+                            break;
                     }
                 }
 
