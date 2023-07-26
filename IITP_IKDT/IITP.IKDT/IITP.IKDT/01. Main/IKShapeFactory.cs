@@ -29,7 +29,6 @@ namespace Pinokio.IKDT
             {
                 EyeshotShapeType type = EyeshotShapeType.None;
                 EyeshotDrawSetting drawSet = null;
-
                 if (string.IsNullOrEmpty(model.Name) == false)
                 {
                     switch (model.Name)
