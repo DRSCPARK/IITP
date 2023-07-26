@@ -129,7 +129,6 @@ namespace Pinokio.IKDT
                     MainForm.Instance.LoadModels(data);
                     MainForm.Instance.RunSimulationAutomation();
                     break;
-
                 case MessageType.SEND_MPT_MESSAGE:
                     RequestMptData mptData = RequestMptData.Parser.ParseFrom(buffer);
                     data = FormattingData(mptData);
